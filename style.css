@@ -177,7 +177,7 @@ article #btn_explore:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: rgb(135, 235, 135);
+    background-color: rgb(189, 245, 189);
     transition: all 500ms 0s ease;
 
 }
