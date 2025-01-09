@@ -317,12 +317,22 @@ article #btn_explore:hover {
     gap: 15px;
 }
 
+#contact_us_two a{
+    text-decoration: none;
+    color: white;
+}
+
 #contact_us_three {
     margin-top: 10px;
     /* padding-left: 10px; */
     display: flex;
     gap: 15px;
     font-size: 22px;
+}
+
+#contact_us_three a{
+    text-decoration: none;
+    color: white;
 }
 
 #get_in_touch {
@@ -429,8 +439,17 @@ article #btn_explore:hover {
     flex-direction: row;
     gap: 35px;
     padding-left: 20px;
+    
 }
 
+#new_music_two img{
+    transition: all 500ms 0s ease;
+}
+
+#new_music_two img:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
 
 #contact #copy {
     color: white;
