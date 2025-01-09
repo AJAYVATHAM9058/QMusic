@@ -1,5 +1,5 @@
 let play_pause = document.getElementById("play_pause");
-let audio_element = new Audio("./Songs/lightOfSevenSong2.mp3");
+let audio_element = new Audio("./Songs/song3KonteChuputho.mp3");
 
 play_pause.addEventListener("click",()=>{
 
