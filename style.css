@@ -480,8 +480,9 @@ article #btn_explore:hover {
     gap: 35px;
 }
 
-#sound_bar #range{
+#sound_bar .range{
     width: 800px;
+    cursor: pointer;
 }
 
 #sound_bar #footer_icons{
