@@ -1,5 +1,5 @@
 let play_pause = document.getElementById("play_pause");
-let audio_element = new Audio("./Songs/song9Godari.mp3");
+let audio_element = new Audio("./Songs/lightOfSevenSong2.mp3");
 let song_progress_bar = document.getElementById("song_progress_bar");
 
 play_pause.addEventListener("click",()=>{
