@@ -167,7 +167,10 @@ article #btn_explore:hover {
     margin-top: 10px;
     justify-content: space-between;
     padding-right: 100px;
+    
+    
 }
+
 
 .song_card {
     border: 1px solid #d2c8c8;
@@ -178,7 +181,7 @@ article #btn_explore:hover {
     flex-direction: column;
     gap: 10px;
     background-color: rgb(189, 245, 189);
-    transition: all 500ms 0s ease;
+   
 
 }
 
@@ -193,7 +196,7 @@ article #btn_explore:hover {
     flex-direction: column;
     gap: 10px;
     cursor: pointer;
-
+    transition: all 500ms 0s ease;
 
 }
 
@@ -227,45 +230,6 @@ article #btn_explore:hover {
 
 }
 
-#play {
-    border: none;
-    /* height: 50px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 10px;
-    width: 50px;
-    margin-left: 190px;
-    margin-bottom: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: #02620d;
-    transition: all 500ms 0s ease; */
-    display: none;
-   
-
-}
-
-#play_icon {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    /* border: 10px solid red; */
-    border: none;
-    transition: all 200ms 0s ease;
-
-}
-
-#play_icon:hover {
-    scale: 1.271;
-
-}
-
-#play:hover {
-    background-color: rgb(45, 243, 6);
-}
-
-
 /* Contact CSS */
 
 #contact {
@@ -275,7 +239,7 @@ article #btn_explore:hover {
     background-color: black;
     color: white;
     padding-left: 20px;
-    padding-top: 55px;
+    padding-top: 45px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -373,6 +337,7 @@ article #btn_explore:hover {
     /* height: 25%; */
     border-radius: 10px;
     border: none;
+    padding: 10px;
 
 }
 
@@ -388,6 +353,7 @@ article #btn_explore:hover {
 #get_in_touch_two textarea {
     border-radius: 10px;
     border: none;
+    padding: 10px;
 }
 
 #get_in_touch_two textarea:focus {
@@ -508,3 +474,34 @@ article #btn_explore:hover {
     scale: 1.1;
 
 }
+
+
+#play_solid{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    position: relative;
+    left: 200px;
+    bottom: 20px;
+
+    transition: all 2s 0s ease;
+
+}
+#play_solid:hover{
+    background-color: gray;
+    
+}
+
+
+#play_icon{
+    height: 35px;
+   
+
+}
+
+
