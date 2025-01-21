@@ -7,9 +7,12 @@ let album_name = document.getElementById("album_name")
 
 let time = document.querySelector("#time")
 
+let forward = document.querySelector(".fa-forward")
+let backward = document.querySelector(".fa-backward")
+
 let songs = [
-    "./Songs/song1.mp3","./Songs/song2.mp3","./Songs/song3.mp3","./Songs/song4.mp3","./Songs/song5.mp3","./Songs/song6.mp3","./Songs/song7.mp3",
-    "./Songs/song8.mp3","./Songs/song9.mp3","./Songs/song10.mp3","./Songs/song11.mp3","./Songs/song12.mp3",
+    "./Songs/song1.mp3", "./Songs/song2.mp3", "./Songs/song3.mp3", "./Songs/song4.mp3", "./Songs/song5.mp3", "./Songs/song6.mp3", "./Songs/song7.mp3",
+    "./Songs/song8.mp3", "./Songs/song9.mp3", "./Songs/song10.mp3", "./Songs/song11.mp3", "./Songs/song12.mp3",
 
 ]
 
@@ -18,6 +21,7 @@ let songNames = [
     "Panjaa", "Godari Gattu Meeda", "Radhika Radhika"
 ]
 
+//playButtons of albums
 play_buttons.forEach((button, index) => {
 
     button.addEventListener("click", function () {
@@ -26,9 +30,9 @@ play_buttons.forEach((button, index) => {
 
             if (currentPlayingIndex !== -1) {
                 play_buttons[currentPlayingIndex].classList.replace("fa-pause", "fa-play")
-                
+
             }
-          
+
 
             audio_element.src = songs[index];
             audio_element.play()
@@ -82,15 +86,15 @@ audio_element.addEventListener("timeupdate", () => {
     console.log(progress_value)
     song_progress_bar.value = progress_value;
     let display_time = audio_element.currentTime;
-    time.innerText = sec_to_min(display_time) +" / "+ sec_to_min(audio_element.duration) 
+    time.innerText = sec_to_min(display_time) + " / " + sec_to_min(audio_element.duration)
 
 })
 
-function sec_to_min(d){
-    var m = Math.floor(d/60)
-    var s = Math.floor(d%60)
+function sec_to_min(d) {
+    var m = Math.floor(d / 60)
+    var s = Math.floor(d % 60)
 
-    return m +":"+s
+    return m + ":" + s
 }
 
 audio_element.addEventListener("timeupdate", (ele) => {
@@ -103,4 +107,46 @@ song_progress_bar.addEventListener("change", (t) => {
     let n = song_progress_bar.value;
     // console.log(n)
     audio_element.currentTime = (n * audio_element.duration) / 100;
+})
+
+
+let count = -1
+
+// forward Button
+forward.addEventListener("click", () => {
+
+    count = currentPlayingIndex
+
+    if (count < 11) {
+        count++;
+        audio_element.src = songs[count]
+        audio_element.play()
+        album_name.innerText = songNames[count]
+        play_pause.classList.replace("fa-play","fa-pause")
+    }
+    else{
+        count = 0
+        audio_element.src = songs[count]
+        audio_element.play()
+        album_name.innerText = songNames[count]
+        play_pause.classList.replace("fa-play","fa-pause")
+    }
+})
+
+
+backward.addEventListener("click", () => {
+    if (count > 0) {
+        count--;
+        audio_element.src = songs[count]
+        audio_element.play()
+        album_name.innerText = songNames[count]
+        play_pause.classList.replace("fa-play","fa-pause")
+    }
+    else{
+        count = 11;
+        audio_element.src = songs[count]
+        audio_element.play()
+        album_name.innerText = songNames[count]
+        play_pause.classList.replace("fa-play","fa-pause")
+    }
 })

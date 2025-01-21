@@ -185,7 +185,7 @@ article #btn_explore:hover {
 
 }
 
-.song_card:hover {
+.song_card:hover{
     border: 1px solid #a69898;
     scale: 1.05;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -199,6 +199,13 @@ article #btn_explore:hover {
     transition: all 500ms 0s ease;
 
 }
+
+.song_card:hover #play_solid{
+    display: flex;
+    transition: all 500ms 0s ease;
+}
+
+
 
 .song_card img {
     width: 100%;
@@ -479,8 +486,8 @@ article #btn_explore:hover {
 #play_solid{
     position: relative;
     font-size: 35px;
-    left: 82%;
-    bottom: 10%;
+    left: 80%;
+    bottom: 15%;
     border: 2px solid whitesmoke;
     width: 50px;
     display: flex;
@@ -488,7 +495,8 @@ article #btn_explore:hover {
     justify-content: center;
     height: 50px;
     border-radius: 50%;
-    background-color: rgb(22, 91, 1);
+    background-color: rgb(19, 75, 2);
+    display: none;
     
 }
 #play_solid:hover{
