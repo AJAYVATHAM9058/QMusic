@@ -195,7 +195,7 @@ article #btn_explore:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    cursor: pointer;
+    
     transition: all 500ms 0s ease;
 
 }
@@ -436,14 +436,14 @@ article #btn_explore:hover {
 /* Footer */
 
 #sound_bar{
-    padding-top: 20px;
+    padding-top: 70px;
     /* border: 2px solid black; */
     height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 35px;
+    gap: 25px;
 }
 
 #sound_bar .range{
@@ -477,31 +477,20 @@ article #btn_explore:hover {
 
 
 #play_solid{
-    height: 50px;
-    width: 50px;
-    border: 2px solid black;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: whitesmoke;
     position: relative;
-    left: 200px;
-    bottom: 20px;
-
-    transition: all 2s 0s ease;
-
-}
-#play_solid:hover{
-    background-color: gray;
+    font-size: 35px;
+    left: 82%;
+    bottom: 10%;
+    border: 2px solid whitesmoke;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(22, 91, 1);
     
 }
-
-
-#play_icon{
-    height: 35px;
-   
-
+#play_solid:hover{
+    cursor: pointer;
 }
-
-
