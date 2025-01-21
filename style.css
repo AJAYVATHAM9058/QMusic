@@ -442,15 +442,22 @@ article #btn_explore:hover {
 
 /* Footer */
 
+footer{
+    background-color: lightgray;
+    
+}
+
+
 #sound_bar{
-    padding-top: 70px;
+    padding-top: 15px;
     /* border: 2px solid black; */
-    height: 130px;
+    height: 170px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
 }
 
 #sound_bar .range{
