@@ -40,6 +40,7 @@ play_buttons.forEach((button, index) => {
             play_pause.classList.replace("fa-play", "fa-pause")
 
             currentPlayingIndex = index
+            console.log(currentPlayingIndex)
             album_name.innerText = songNames[index]
 
         }
@@ -49,11 +50,13 @@ play_buttons.forEach((button, index) => {
                 audio_element.play()
                 button.classList.replace("fa-play", "fa-pause")
                 play_pause.classList.replace("fa-play", "fa-pause")
+                
             }
             else {
                 audio_element.pause()
                 button.classList.replace("fa-pause", "fa-play")
                 play_pause.classList.replace("fa-pause", "fa-play")
+               
             }
         }
 
@@ -83,7 +86,7 @@ play_pause.addEventListener("click", () => {
 
 audio_element.addEventListener("timeupdate", () => {
     let progress_value = (audio_element.currentTime / audio_element.duration) * 100;
-    console.log(progress_value)
+    // console.log(progress_value)
     song_progress_bar.value = progress_value;
     let display_time = audio_element.currentTime;
     time.innerText = sec_to_min(display_time) + " / " + sec_to_min(audio_element.duration)
@@ -112,17 +115,20 @@ song_progress_bar.addEventListener("change", (t) => {
 
 let count = -1
 
+
 // forward Button
 forward.addEventListener("click", () => {
 
     count = currentPlayingIndex
+    count++;
 
-    if (count < 11) {
-        count++;
+
+    if (count <= 11) {
         audio_element.src = songs[count]
         audio_element.play()
         album_name.innerText = songNames[count]
         play_pause.classList.replace("fa-play","fa-pause")
+        currentPlayingIndex = count
     }
     else{
         count = 0
@@ -130,17 +136,23 @@ forward.addEventListener("click", () => {
         audio_element.play()
         album_name.innerText = songNames[count]
         play_pause.classList.replace("fa-play","fa-pause")
+        currentPlayingIndex = count
     }
 })
 
 
 backward.addEventListener("click", () => {
-    if (count > 0) {
-        count--;
+    
+    count = currentPlayingIndex
+    count--;
+    
+
+    if (count >= 0) {
         audio_element.src = songs[count]
         audio_element.play()
         album_name.innerText = songNames[count]
         play_pause.classList.replace("fa-play","fa-pause")
+        currentPlayingIndex = count
     }
     else{
         count = 11;
@@ -148,5 +160,6 @@ backward.addEventListener("click", () => {
         audio_element.play()
         album_name.innerText = songNames[count]
         play_pause.classList.replace("fa-play","fa-pause")
+        currentPlayingIndex = count
     }
 })
