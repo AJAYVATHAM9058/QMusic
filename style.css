@@ -242,11 +242,12 @@ article #btn_explore:hover {
 #contact {
     height: 100vh;
     width: 100vw;
+    
     /* border: 1px solid blue; */
     background-color: black;
     color: white;
     padding-left: 20px;
-    padding-top: 45px;
+    padding-top: 0px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -254,11 +255,12 @@ article #btn_explore:hover {
 }
 
 #contact_container {
-    /* border: 2px solid black; */
+    /* border: 2px solid red; */
     width: 90%;
-    margin: 0px 98px;
+    margin: 0px auto;
     display: flex;
-    height: 75%;
+    height: 55%;
+    
 
 }
 
@@ -434,7 +436,7 @@ article #btn_explore:hover {
     /* width: 100%; */
     position: relative;
     left: 470px;
-    bottom: 20px;
+    top: 100px;
     /* border: 2px solid red; */
 
 }
@@ -449,25 +451,62 @@ footer{
 
 
 #sound_bar{
-    padding-top: 15px;
-    /* border: 2px solid black; */
-    height: 170px;
-    
+    /* padding-top: 0px; */
+    border: 2px solid black;
+    height: 35vh;
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 #sound_bar .range{
     width: 800px;
+    cursor: pointer;    
+    accent-color: green;
+  
+}
+
+#volume_range1{
+ 
+    position: relative;
+    top: 35px;
+    right: 30px;
+    writing-mode: vertical-rl;
+    vertical-align: auto;
+    direction: rtl;
+    height:60px;
+    width: 6px;
+    accent-color: black;
     cursor: pointer;
+    /* border: 2px solid red; */
+}
+
+#abc{
+    /* border: 1px solid red; */
+    height: 10px;
+}
+
+#album_name{
+    position: relative;
+    top: 35px;
+    font-size: large;
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+#time{
+    position: relative;
+    bottom: 10px;
 }
 
 #sound_bar #footer_icons{
     display: flex;
-    gap: 40px;
+    gap: 45px;
+    position: relative;
+    top: 90px;
  
 }
 
@@ -509,3 +548,32 @@ footer{
 #play_solid:hover{
     cursor: pointer;
 }
+
+
+
+#sendMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 90vw;
+}
+
+
+#sound_bar #volume{
+
+    position: relative;
+    right: 90px;
+    top: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.55rem;
+    /* border: 1px solid black; */
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+

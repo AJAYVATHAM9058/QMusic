@@ -159,7 +159,13 @@
         </section>
 
         <section id="contact">
+           
+                <div id="sendMessage">
+                    
+                </div>
+
             <article id="contact_container">
+
                 <aside id="contact_us">
                     <div id="contact_us_one">
                         <h3>Contact Us</h3>
@@ -210,12 +216,12 @@
                     <div id="get_in_touch_one">
                         <h3>Get In Touch</h3>
                     </div>
-                    <form id="get_in_touch_two">
+                    <form id="get_in_touch_two" action="sendMessage">
 
-                        <input type="text" class="in1" placeholder="Name">
-                        <input type="text" class="in1" placeholder="Phone">
-                        <input type="text" class="in1" placeholder="Email">
-                        <textarea name="message" id="message" placeholder="Message" rows="4" cols="72"></textarea>
+                        <input type="text" class="in1" placeholder="Name" name="name">
+                        <input type="number" class="in1" placeholder="Phone" name="phone">
+                        <input type="email" class="in1" placeholder="Email" name="email">
+                        <textarea name="message" id="message" placeholder="Message" rows="4" cols="72" name="message"></textarea>
 
                         <input type="submit" id="submit" value="Send">
                     </form>
@@ -246,11 +252,24 @@
         </section>
 
         <footer id="sound_bar">
-            <div>
-                <p id="time"></p>
+            <div id="abc">   
+              
+                
+                <div id="volume">
+                    <i class="fa-solid fa-volume-low" id="volume1"></i>
+                </div>
+
+                <div id="volume_range">
+
+                    <input type="range" name=""  id="volume_range1">
+                </div>
+
+                <p id="time">NaN:NaN</p>
+
             <input type="range" class="range" value = "0" min="0" max="100" id="song_progress_bar">
             </div>
             <p id="album_name">light of seven</p>
+
             <article id="footer_icons">
                 <i class="fa-solid fa-backward"></i>
                 <i class="fa-solid fa-play" id="play_pause"></i>
