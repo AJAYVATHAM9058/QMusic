@@ -13,6 +13,7 @@
 /* Home Page Starts Here */
 
 #home {
+    /* border: 2px solid red; */
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -452,7 +453,7 @@ footer{
 
 #sound_bar{
     /* padding-top: 0px; */
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 35vh;
     width: 100vw;
     display: flex;
@@ -576,4 +577,294 @@ footer{
     cursor: pointer;
     background-color: whitesmoke;
 }
+
+
+
+@media only screen and (max-width : 600px) and (max-height : 851px) {
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    #home{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    nav{
+        /* border: 2px solid red; */
+        flex-basis: 13%;
+        display: flex;
+    }
+
+    #home_page{
+        flex-basis: 87%;
+    }
+
+    #nav_one {
+       display: flex;
+       /* border: 1px solid blue; */
+       flex-basis: 20%;
+    }
+    #nav_two{
+        flex-basis: 80%;
+        /* border: 1px solid red; */
+       display: flex;
+       flex-direction: row;
+       gap: 0px;
+       justify-content: flex-end;
+       align-items: center;
+       gap: 30px;
+       padding-right: 15px;
+       
+       
+    }
+ 
+    #nav_two a{
+        position: relative;
+        top: 15px;
+    }
+
+
+
+
+    #goal{
+        display: flex;
+        flex-direction: column;
+        /* gap: 1px; */
+        
+    }
+
+    #goal #welcome1{
+        font-size: 3rem;
+    }
+
+    #Q{
+        font-size: 7rem;
+        position: relative;
+        bottom: 110px;
+        left: 10px;
+    }
+    #m1{
+        position: relative;
+        bottom: 195px;
+        left: 95px;
+        font-size: 50px;
+    }
+
+    /* Albums Page Starts here */
+
+    #albums{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #album_title h2{
+        text-align: center;
+        font-size: 27px;
+        margin-top: 10px;
+    }
+
+    #song_container {
+        /* border: 2px solid blue; */
+        height: 100%;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px auto;
+        gap: 3px;
+        padding: 10px 0px 0px 20px;
+        /* margin-top: 10px; */
+        justify-content: space-between;
+        padding-right: 10px;
+        
+        
+    }
+
+    .song_card {
+        border: 1px solid #d2c8c8;
+        height: 230px;
+        width: 100px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        /* gap: 10px; */
+        background-color: rgb(189, 245, 189); 
+    }
+    .song_card:hover{
+        scale: 1.15;
+        border: 1px solid #d2c8c8;
+        height: 230px;
+        width: 100px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        /* gap: 10px; */
+        background-color: rgb(189, 245, 189);  
+
+        transition: all 800ms 0s ease;
+    }
+
+    .song_card:hover #play_solid{
+        display: flex;
+        font-size: 22px;
+        height: 30px;
+        width: 30px;
+        transition: all 500ms 0s ease;
+    }
+
+    .song_card img{
+        height: 150px;
+    }
+
+    .song_card h3{
+        font-size: 15px;
+    }
+    
+    .song_card p{
+        font-size: 10px;
+    }
+
+    .song_card #play_solid{
+        position: relative;
+        font-size: 22px;
+        left: 65%;
+        bottom: 38%;
+    }
+   
+    /* Contact Us */
+
+    #contact{
+        height: 70vh;
+        width: 100vw;
+        /* border: 2px solid red; */
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+
+    }
+
+    #contact_container{
+        /* border: 2px solid blue; */
+        width: 100vw;
+        height: 70%;
+        display: flex;
+        margin: 0px auto;
+    }
+
+    #contact_us{
+        /* border: 1px solid red; */
+        padding: 10px;
+        flex-basis: 20%;
+    }
+    #contact_us_one{
+        font-size: 18px;
+    }
+
+    #get_in_touch{
+        flex-basis: 50%;
+        /* border: 1px solid green; */
+        margin: 0px;
+        padding-top: 10px;
+    }
+
+    #get_in_touch_one{
+        /* border: 2px solid green; */
+        font-size: 18px;
+        /* padding: 0px; */
+        margin: 0px;
+    }
+
+    #get_in_touch_two .in1{
+        width: 150px;
+        height: 25px;
+    }
+
+    #get_in_touch_two .in1:focus{
+        width: 150px;
+        height: 25px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+    }
+
+
+    #get_in_touch_two textarea{
+        width: 150px;
+        height: 50px;
+    }
+
+    #get_in_touch_two #submit{
+        height: 25px;
+        width: 100px;
+    }
+
+    #new_music{
+        flex-basis: 30%;
+        /* border: 2px solid yellow; */
+        padding: 0px;
+        padding-right: 10px;
+    }
+    #new_music_one{
+        font-size: 18px;
+        margin: 0px;
+        padding-top: 10px;
+    }
+
+    #new_music_two{
+        display: flex;
+        gap: 17px;
+    }
+
+    #new_music_two img{
+        height: 50px;
+        width: 50px;
+    }
+
+    #copy p{
+        position: relative;
+        color:white;
+        right: 350px;
+        bottom: 150px;
+    }
+
+    #sound_bar{
+        width: 100vw;
+        height: 30vh;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px;
+    }
+
+    #sound_bar .range{
+        width: 60vw;
+        height: 25vh;
+    }
+
+    #sound_bar #footer_icons{
+        display: flex;
+        gap: 25px;
+        position: relative;
+        top: 90px;
+    }
+    #sound_bar #song_progress_bar{
+        position: relative;
+        bottom:100px;
+    }
+    #album_name{
+        position: relative;
+        bottom: 50px;
+        height: 20%;
+        width: 50%;
+        left: 45px;
+        /* border: 2px solid red; */
+    }
+
+}
+
 
