@@ -618,6 +618,10 @@ footer{
 
     #home_page{
         flex-basis: 90%;
+        /* border: 2px solid red; */
+        background: url("./assets/banner2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     #nav_one {
