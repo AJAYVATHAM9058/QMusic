@@ -85,7 +85,7 @@ nav {
     justify-content: center;
     align-items: center;
     background: url("./assets/banner2.jpg");
-    background-size: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
     /* overflow-x: hidden; */
 }
